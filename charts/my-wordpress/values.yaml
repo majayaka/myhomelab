@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/majayaka/myhomelab
+  tag: latest
+
+mysql:
+  user: user
+  database: wordpress
+
+service:
+  type: LoadBalancer

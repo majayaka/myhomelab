@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wp-service
+spec:
+  type: {{ .Values.service.type }}
+  selector:
+    app: my-wordpress
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
