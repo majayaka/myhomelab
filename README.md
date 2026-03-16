@@ -25,8 +25,8 @@ The project implements a robust automated pipeline:
 - [x] **Phase 1: Containerization** (Docker & Docker Compose)
 - [x] **Phase 2: CI Automation** (GitHub Actions & GHCR)
 - [x] **Phase 3: Orchestration** (Local Kubernetes with k3s/k3d)
-- [ ] **Phase 4: Package Management** (Migrating to **Helm**)
-- [ ] **Phase 5: Continuous Delivery** (Implementing **ArgoCD** for GitOps)
+- [x] **Phase 4: Package Management** (Migrating to **Helm**)
+- [x] **Phase 5: Continuous Delivery** (Implementing **ArgoCD** for GitOps)
 - [ ] **Phase 6: Observability** (Prometheus & Grafana Monitoring)
 
 ## 🛠 How to Run (Local Kubernetes)
