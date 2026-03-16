@@ -1,0 +1,572 @@
+/* Ayaka portfolio theme
+
+Copyright (c) 2023 Ayaka
+
+*/
+
+
+/* general */
+:root {
+    --primary: #b1a59e;
+    --accent: #8a7a6d;
+    --body: #ebe6e3;
+    --body2: #f4eeeb;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2); 
+}
+
+
+body {
+  background-color: var(--body2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}
+
+* {
+  font-family: 'Questrial', sans-serif;
+  line-height: 1.7;
+  
+}
+
+
+
+/* navbar */
+.navbar {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.navbar-brand {
+  max-width: 300px;
+  
+}
+
+.navbar .nav-item .nav-link  {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: large;
+}
+
+.nav-item a {
+    padding-bottom:15px;
+    border-bottom: 2px solid transparent;
+    display: block;
+} 
+
+.nav-item a:hover {
+    border-bottom: 4px solid #2b2b2b;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+.nav-item a:active {
+    color: var(--accent);
+}
+
+.button svg {
+  fill: var(--accent);
+}
+
+
+
+/* front-page */
+
+.profile-photo{
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.profile-photo img {
+    max-width: 50%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: clip;
+}
+
+.custom-btn {
+  background-color: var(--accent);
+  display: inline-block;
+  border-radius: 2%;
+  padding: 10px 20px;
+  color: var(--body);
+  box-shadow: var(--box-shadow);
+  
+}
+
+.custom-btn:hover {
+  background-color: #6d645e;
+  color: var(--body);
+  transition: all 0.35s ease;
+  transform: translateY(2px);
+
+}
+
+/* skill-set */
+
+svg {
+  width: 114px;
+  height: 114px;
+  margin: 1em;
+}
+
+.brand-photo {
+    width:150px;
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    border-radius: 50%; 
+}
+
+.brand-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.bg {
+  fill: none;
+  stroke-width: 10px;
+  stroke: var(--accent);
+}
+
+.progressbar {
+    width: 200px;
+    margin: 0 auto; 
+}
+
+[class^="meter-"] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  
+}
+
+.meter-1 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 100;
+  stroke: #c46f6f;
+  animation: progress-1 4s ease-out;
+}
+.meter-2 {
+  stroke: #71b768;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 100;
+  animation: progress-2 3.8s ease-out;
+}
+.meter-3 {
+  stroke: #eac677;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 120;
+  animation: progress-3 3.5s ease-out;
+}
+.meter-4 {
+  stroke: #c46f6f;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;
+  animation: progress-4 3s ease-out;
+}
+.meter-5 {
+  stroke: #71b768;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;
+  animation: progress-5 2.8s ease-out;
+}
+
+.meter-6 {
+  stroke: #eac677;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;
+  animation: progress-6 2.5s ease-out;
+}
+
+.meter-7 {
+  stroke: #c46f6f;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;
+  animation: progress-7 1.8s ease-out;
+}
+
+.meter-8 {
+  stroke: #71b768;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 190;
+  animation: progress-8 1.5s ease-out;
+}
+
+.meter-9 {
+  stroke: #eac677;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 190;
+  animation: progress-9 1.2s ease-out;
+}
+
+.meter-10 {
+  stroke: #71b768;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 70;
+  animation: progress-7 1s ease-out;
+}
+
+
+@keyframes progress-1 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes progress-2 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes progress-3 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 120;
+  }
+}
+
+@keyframes progress-4 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+
+@keyframes progress-5 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+
+@keyframes progress-6 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+
+@keyframes progress-7 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+
+@keyframes progress-8 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 190;
+  }
+}
+
+@keyframes progress-9 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 190;
+  }
+}
+
+@keyframes progress-10 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 70;
+  }
+}
+
+/* Portfolio */
+
+.project {
+   position: relative;
+   overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 39, 71, 0.7);
+    padding: 30px;
+    display: flex;
+    opacity: 0;
+    transition: all 0.4s ease;
+    object-fit: cover;
+}
+
+
+.project img {
+    transition: all 0.4s ease;
+    
+}
+
+.project.card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.project:hover .overlay {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.white-logo {
+  font-size:50px;
+	color: white!important;
+} 
+
+/* Pick-up Blogs */
+
+
+.grid-container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	justify-content: center; 
+    align-items: center; 
+}
+
+
+/* BLOG Archive page -------------*/
+
+
+.inner_grid {
+    background-position: center;
+    background-color: var(--primary);
+    border-radius: 10px;
+    
+}
+
+.inner_grid h4 {
+	color: var(--body2);
+}
+
+.inner_grid p {
+	color: white;
+}
+
+.inner_grid strong {
+	color: #2b2b2b;
+}
+
+
+/*-------------------------------------------
+sidebar
+-------------------------------------------*/
+
+.inner_grid_side{
+    background-position: center;
+    background-color: var(--primary);
+    border-radius: 10px;
+    
+}
+
+.archive ul, h4, h5, p, a {
+    color: var(--primary);
+}
+
+.archive ul:hover,
+h4:hover,
+h5:hover,
+p:hover,
+a:hover {
+  color: var(--accent);
+}
+
+.author {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.author img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+.author h5, h3, p {
+  color: white;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  aside
+  -------------------------------------------*/
+  #sidebar {
+    width: 100%;
+    padding: 0;
+  }
+
+  input #searchsubmit {
+    color: var(--primary);
+    box-shadow: var(--box-shadow);
+    transition: all 0.35s ease;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  input #searchsubmit:hover {
+    background-color: var(--primary);
+    color: var(--accent);
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+}
+
+  input[type="submit" i] {
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: #b1a59e;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-image: initial;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+input[type="submit" i] :hover {
+    background-color: var(--primary);
+    color: var(--accent);
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+
+/* BLOG Single page -------------*/
+.breadcrumb-wrapper a, li {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--accent);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.section-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-left: 0.25rem solid var(--accent);
+}
+
+.section-content em {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-left: 0.25rem solid var(--accent);
+}
+
+.content-wrap p {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--accent);
+}
+
+
+/* footer */
+
+.me-4 {
+    color: var(--accent);
+}
+
+a i {
+    color: var(--accent);
+}
+
+a:hover i {
+    color: black!important;
+}
+
+.footer-logo {
+  max-width: 300px;
+  
+}
+
+.text-reset {
+  color: var(--accent);
+}
+
+.text-reset:hover {
+  color: black;
+}
+
+/* Contact */
+
+.contact-send {
+    background-color: var(--primary);
+    box-shadow: var(--box-shadow);
+    transition: all 0.35s ease;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact-send:hover {
+    background-color: var(--primary);
+    color: var(--accent);
+    box-shadow: none;
+    transform: translateY(2px);
+
+}
+
+/* 404 page */
+
+.btn-outline-light {
+    color: var(--accent);
+    border-color: var(--accent);
+}
