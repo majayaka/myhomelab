@@ -9,16 +9,17 @@ This repository is a comprehensive Home Lab project designed to manage and opera
 - **CI/CD:** GitHub Actions (Auto-build & Push to GHCR) —— ✅ *Implemented*
 - **Container Registry:** GitHub Container Registry (GHCR) —— ✅ *Implemented*
 - **Security:** Secret Management (K8s Secrets & .env) —— ✅ *Implemented*
-- **GitOps:** ArgoCD —— 🚧 *Upcoming*
-- **Monitoring:** Prometheus & Grafana —— 🚧 *Future Milestone*
+- **GitOps:** ArgoCD —— ✅ *Implemented*
+- **Monitoring:** Prometheus & Grafana —— ✅ *Implemented*
 
 ## 🏗 System Architecture
 
 The project implements a robust automated pipeline:
 1. **Develop:** Local theme development in Docker environment.
 2. **Push:** Code changes are pushed to GitHub.
-3. **CI (Continuous Integration):** GitHub Actions automatically builds a new Docker image and pushes it to **GHCR**.
+3. **CI (Continuous Integration):** GitHub Actions automatically builds a new Docker image and pushes it to GHCR.
 4. **Orchestrate:** Kubernetes (k3s) pulls the latest image from GHCR and deploys it with automated service recovery.
+5. **GitOps & Observability:** ArgoCD manages the cluster state, while Prometheus/Grafana monitors performance.
 
 ## 🗺 Roadmap (The GitOps Journey)
 
@@ -28,6 +29,25 @@ The project implements a robust automated pipeline:
 - [x] **Phase 4: Package Management** (Migrating to **Helm**)
 - [x] **Phase 5: Continuous Delivery** (Implementing **ArgoCD** for GitOps)
 - [x] **Phase 6: Observability** (Prometheus & Grafana Monitoring)
+
+## 📸 Implementation Gallery
+
+![Portfolio Frontpage](screenshots/portfolio-frontpage.png)
+
+GitOps Workflow (ArgoCD)
+Managed Kubernetes resources using GitOps principles. Even under local resource constraints, I verified successful pod deployment and synchronization.
+
+Self-Correction Note: Due to local hardware resource limits (8GB RAM), some components showed "Progressing" status during high load, but actual pod status and service connectivity were successfully confirmed via CLI.
+
+![ArgoCD Dashboard](screenshots/argocd-dashboard.png)
+
+Monitoring & Observability (Prometheus & Grafana)
+Implemented a full monitoring stack to visualize cluster health and resource usage.
+
+The "up" metric verified that all targets (kubelet, apiserver, nodes) were successfully scraped.
+
+![Prometheus Targets](screenshots/prometheus-targets.png)
+![Grafana Dashboard](screenshots/grafana-dashboard.png)
 
 ## 🛠 How to Run (Local Kubernetes)
 
